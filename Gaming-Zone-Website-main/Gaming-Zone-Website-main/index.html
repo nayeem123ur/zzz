@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Zone</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="images/Frame.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+.hover-img {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 250px;
+  min-width: 240px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hover-img * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.hover-img::before,
+.hover-img::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 32px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+}
+
+.hover-img img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.hover-img figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hover-img:hover::before,
+.hover-img:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hover-img:hover > img {
+  opacity: 0.7;
+}
+
+.hover-img:hover figcaption {
+  opacity: 1;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div class="logo-side-div">
+                <img src="images/Frame.png" alt="Frame" class="logo-img">
+                <p class="logo-text"><span>G</span>amer</p>
+            </div>
+            <div class="menu-side-div">
+                <div class="menu-side">
+                    <p class="about-us">About Us</p>
+                    <p class="devlopers">Devlopers</p>
+                    <div class="follow-btn">
+                        <p class="follow-us-on">Follow Us On</p>
+                        <img src="images/youtube.png" alt="" class="social-icon">
+                        <img src="images/twitter.png" alt="" class="social-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header">
+            <div class="header-text-side" >
+                <p class="play-like-the">PLAY LIKE THE</p>
+                <p class="goat">G.O.A.T</p>
+
+                <div class="optio-div">
+                    <img src="images/play-button-color.svg" alt="" class="option-icon">
+                    <p class="option-text">1-Click instant play</p>
+                </div>
+                <div class="optio-div">
+                    <img src="images/download-btn.svg" alt="" class="option-icon">
+                    <p class="option-text">No Download</p>
+                </div>
+                <div class="optio-div">
+                    <img src="images/people-btn.svg" alt="" class="option-icon">
+                    <p class="option-text">1000s of supported online games</p>
+                </div>
+                
+                <div class="button-father">
+                    <p class="sign-in">SIGN IN</p>
+                    <p class="go-rogue">GO ROGUE</p>
+                </div>
+            </div>
+            <div class="header-image-side">
+                <img src="images/Group 18.png" alt="" class="gerdien-img">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="gamer">
+            <div class="gamer-section">
+                <div class="gamer-img-side">
+                    <img src="images/pngwing 4.png" alt="" class="gamer-batch-img">
+                </div>
+                <div class="gamer-text-side">
+                    <p class="gamer-title">We are gamer</p>
+                    <p class="gamer-description">An international digital games and entertainment company. We develop, publish and distribute multiplayer mobile games. We reach over 400 million players each month and our audience keeps growing.</p>
+                    <p class="gamer-btn">know more</p>
+                    <p class="gamer-context">Our purpose...</p>
+                    <p class="gamer-context-info">“unleash the gamer in everyone”</p>
+                </div> 
+            </div>
+        </section>
+
+         <section class="online-game">
+            <div class="game-online-main">
+                <p class="title-online-game">Online Games <span>Funny Videos</span></p>
+                <p class="title-online-game-info">A Collection of Hilarious Videos to Brighten Your Day</p>
+
+                <div class="online-main-game">
+                    <div class="game-online">
+                        <figure class="hover-img">
+                            <img src="images/Rectangle 4.png"/>
+                            <figcaption>
+                              <!-- <h3>Lorem <br/>Ipsum</h3> -->
+                              <img src="images/play.png" alt="">
+                              <p class="watch-now" style="color: #FF42A5; text-align: center;font-family: Work Sans; 
+                              font-style: normal;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: normal;">Watch Now</p>
+                            </figcaption>
+                          </figure>
+                        <!-- <img src="images/Rectangle 4.png" alt="" class="game-poster"> -->
+                        <p class="game-info">No Download. No Installs. Play games Instantly on Gamer.</p>
+                    </div>
+                    <div class="game-online">
+                        <!-- <img src="images/Rectangle 5.png" alt="" class="game-poster"> -->
+                        <figure class="hover-img">
+                            <img src="images/Rectangle 5.png"/>
+                            <figcaption>
+                              <!-- <h3>Lorem <br/>Ipsum</h3> -->
+                              <img src="images/play.png" alt="">
+                              <p class="watch-now" style="color: #FF42A5; text-align: center;font-family: Work Sans; 
+                              font-style: normal;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: normal;">Watch Now</p>
+                            </figcaption>
+                          </figure>
+                        <p class="game-info">Did you score? #unblockedgames #school</p>
+                    </div>
+                    <div class="game-online">
+                        <!-- <img src="images/Rectangle 6.png" alt="" class="game-poster"> -->
+                        <figure class="hover-img">
+                            <img src="images/Rectangle 6.png"/>
+                            <figcaption>
+                              <!-- <h3>Lorem <br/>Ipsum</h3> -->
+                              <img src="images/play.png" alt="">
+                              <p class="watch-now" style="color: #FF42A5; text-align: center;font-family: Work Sans; 
+                              font-style: normal;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: normal;">Watch Now</p>
+                            </figcaption>
+                          </figure>
+                        <p class="game-info">Breaking game records like OG</p>
+                    </div>
+                    <div class="game-online">
+                        <!-- <img src="images/Rectangle 7.png" alt="" class="game-poster"> -->
+                        <figure class="hover-img">
+                            <img src="images/Rectangle 7.png"/>
+                            <figcaption>
+                              <!-- <h3>Lorem <br/>Ipsum</h3> -->
+                              <img src="images/play.png" alt="">
+                              <p class="watch-now" style="color: #FF42A5; text-align: center;font-family: Work Sans; 
+                              font-style: normal;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: normal;">Watch Now</p>
+                            </figcaption>
+                          </figure>
+                        <p class="game-info">Busted gaming on school laptop, but you are still lit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section class="play-instantly-section">
+            <div class="play-instantly">
+                <div class="play-text-side">
+                    <p class="play-instantly-title"><span>Play Instantly,</span><br> No Downloads <br>
+                        No Installs.</p>
+                    <p class="play-instantly-info">Play games online for free without downloading. <br>Just click the Play button and play instantly in your <br> browser.</p>
+                </div>
+                <div class="image-extar-instant">
+                    <div class="play-img-side" style="background-image: url('images/Rectangle\ 55.png');">
+                        <img src="images/Rectangle 66.png" alt="" class="img-play-instant-small">
+                    </div> 
+                </div>
+            </div>
+        </section> 
+
+        <section id="Careers-head">
+            <div class="Careers">
+                <div class="Careers-text-side">
+                    <p class="careers-title">Careers</p>
+                    <p class="careers-description">Gamer is driven to create the best and most fun games for our millions of players all around the world, and we,re always on the lookout for more top talent to join our growing team. If you,d like to help us make great games and be a part of Gamers bright future, we,d love to hear from you.</p>
+                    <div class="carees-section-div">
+                        <p class="question-side">Multimedia Artist +<br>
+                            Data Engineer +<br>
+                            Adroid Engineer +<br>
+                            Server Developer +<br>
+                            Group Financial Accountant +<br>
+                            Senior User Acuisition Specialist +</p>
+                        <p class="answer-side">Lisbon, Portugal <br>
+                            Lisbon, Portugal <br>
+                            Zoetermeer, Netherlands <br>
+                            Lisbon, Portugal <br>
+                            London, United Kingdom <br>
+                            Lisbon, Portugal</p>
+                    </div>
+                    <p class="btn-see-all-positions">See all positions</p>
+
+                </div>
+                 <div class="Careers-image-side" style="background-image: url('images/Group\ 14.png');">
+                    <img src="images/Group 65.png" alt="" class="baby-careers">
+                </div>  
+            </div>
+        </section> 
+
+        <section class="catagorie-headmaster">
+            <div class="catagorie-itam">
+                <img src="images/Rectangle 11.png" alt="" class="cat-logo">
+                <p class="cat-name">Action Games</p>
+            </div>
+
+            <div class="catagorie-itam">
+                <img src="images/Rectangle 12.png" alt="" class="cat-logo">
+                <p class="cat-name">Adventure Games</p>
+            </div>
+
+            <div class="catagorie-itam">
+                <img src="images/Rectangle 13.png" alt="" class="cat-logo">
+                <p class="cat-name">Arcade Games</p>
+            </div>
+
+            <div class="catagorie-itam">
+                <img src="images/Rectangle 14.png" alt="" class="cat-logo">
+                <p class="cat-name">Educational Games</p>
+            </div>
+
+            <div class="catagorie-itam">
+                <img src="images/Rectangle 15.png" alt="" class="cat-logo">
+                <p class="cat-name">Educational Games</p>
+            </div>
+
+            <div class="catagorie-itam">
+                <img src="images/Rectangle 16.png" alt="" class="cat-logo">
+                <p class="cat-name">Role Palying Games</p>
+            </div>
+
+            <div class="catagorie-itam">
+                <img src="images/Rectangle 17.png" alt="" class="cat-logo">
+                <p class="cat-name">Music & Audio Games</p>
+            </div>
+
+            <div class="catagorie-itam">
+                <img src="images/Rectangle 18.png" alt="" class="cat-logo">
+                <p class="cat-name">Puzzle Games</p>
+            </div>
+
+            <div class="catagorie-itam">
+                <img src="images/Rectangle 19.png" alt="" class="cat-logo">
+                <p class="cat-name">Strategy Games</p>
+            </div>
+        </section>  
+    </main>
+    
+     <footer>
+        <div class="footer">
+            <div class="logo-side-div">
+                <img src="images/Frame.png" alt="Frame" class="logo-img">
+                <p class="footer-logo-text"><span>G</span>amer</p>
+            </div>
+            
+            <div class="menu-section">
+                <ol>
+                    <li>Our Story</li>
+                    <li>Games</li>
+                    <li>Web Games</li>
+                    <li>Careers</li>
+                    <li>Support</li>
+                    <li>My Account</li>
+                </ol>
+            </div>
+        
+            <div class="social-logo-footer">
+                <img src="images/social-logo/twitter 1.svg" alt="">
+                <img src="images/social-logo/facebook 1.svg" alt="">
+                <img src="images/social-logo/Group 49.svg" alt="">
+                <img src="images/social-logo/linkedin 1.svg" alt="">
+                <img src="images/social-logo/instagram 1.svg" alt="">
+                <img src="images/social-logo/apple 1.svg" alt="">
+            </div>
+
+            <ol class="terms-ol">
+                <li class="terms-li">Terms and Conditions</li>
+                <li class="terms-li">Privacy Policy</li>
+                <li class="terms-li">Cookie Policy</li>
+                <li class="terms-li">Privacy Settings</li>
+            </ol>
+
+            <p class="copyright">Play Games @ Gamer <br> @ 2000-2023 Gamer Bangladesh</p>
+        </div>
+    </footer>   
+</body>
+</html>
